@@ -38,7 +38,11 @@ export function FixedNavbar() {
   };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50">
+    <header
+      key={currentLang}
+      dir={isRTL ? "rtl" : "ltr"}
+      className="fixed inset-x-0 top-0 z-50"
+    >
       <div className="bg-background/10 backdrop-blur-[0.5px]">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
           {/* Logo */}
