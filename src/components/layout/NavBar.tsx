@@ -144,10 +144,6 @@ export function FixedNavbar() {
                 </nav>
 
                 <div className="space-y-6 border-t border-border/50 pt-6">
-                  <Button size="lg" className="w-full">
-                    {t("nav.orderNow")}
-                  </Button>
-
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-muted-foreground">Theme</span>
                     <ThemeToggle />
