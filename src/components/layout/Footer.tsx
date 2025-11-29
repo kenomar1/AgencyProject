@@ -74,18 +74,18 @@ export default function Footer() {
               </h4>
               <ul className="space-y-4 text-muted-foreground">
                 {/* This is the correct, fully typed way to get arrays in i18next */}
-                {(tf("services", { returnObjects: true }) as string[]).map(
-                  (service) => (
-                    <li key={service}>
-                      <a
-                        href="#"
-                        className="hover:text-primary transition inline-block"
-                      >
-                        {service}
-                      </a>
-                    </li>
-                  )
-                )}
+                {(
+                  tf("services", { returnObjects: true }) as unknown as string[]
+                ).map((service) => (
+                  <li key={service}>
+                    <a
+                      href="#"
+                      className="hover:text-primary transition inline-block"
+                    >
+                      {service}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -101,7 +101,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-primary flex-shrink-0" />
-                  <span>{tf("phone")}</span>
+                  <span dir="ltr">{tf("phone")}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-primary flex-shrink-0" />
