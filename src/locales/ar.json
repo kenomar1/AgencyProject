@@ -9,9 +9,9 @@
 
   "nav": {
     "home": "الرئيسية",
-    "shop": "المتجر",
+    "services": "الخدمات",
     "contact": "اتصل بنا",
-    "orderNow": "اطلب الآن"
+    "gallery": "المعرض"
   },
   "contact": {
     "heroTitle": "لنبنِ معًا",
